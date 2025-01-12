@@ -16,6 +16,8 @@
 v_speed = 0;
 h_speed = 0;
 
+global.mlt_current_lives = global.mlt_max_lives;
+
 function _shoot() {
     API.play_sound(snd_mlt_bullet);
     

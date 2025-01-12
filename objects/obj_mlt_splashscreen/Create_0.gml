@@ -1,3 +1,13 @@
+highscore = API.read_real("space_rocks_survivors", "highscore", 0);
+last_score = global.mlt_current_score;
+
+if(last_score > highscore) {
+    highscore = last_score;
+    API.write_real("space_rocks_survivors", "highscore", highscore);
+}
+
+mlt_init_globals();
+
 title_text = "";
 is_game_over = false;
 

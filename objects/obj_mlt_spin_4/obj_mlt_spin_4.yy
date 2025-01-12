@@ -8,6 +8,7 @@
   "name":"obj_mlt_spin_4",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"enemy_score","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"enemies",

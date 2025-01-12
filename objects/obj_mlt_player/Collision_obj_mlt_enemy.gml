@@ -1,6 +1,7 @@
 global.mlt_current_lives -= 1;
+global.mlt_current_lives -= max(0, global.mlt_current_lives);
 
-if(global.mlt_current_lives > 0){ 
+if(global.mlt_current_lives > 0) { 
     return;
 }
 
@@ -11,4 +12,5 @@ if(global.mlt_current_score == 0) {
 	API.achievement_unlock("mlt_demo_loser");
 }
 
-alarm_set(0, 25);
+instance_destroy(obj_mlt_game);
+room_goto(room_mlt_space_rocks_game_over);

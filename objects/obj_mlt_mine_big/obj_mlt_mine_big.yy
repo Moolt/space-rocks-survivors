@@ -8,6 +8,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"enemy_lives","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_mine_small","path":"objects/obj_mlt_mine_small/obj_mlt_mine_small.yy",},"propertyId":{"name":"projectile_speed","path":"objects/obj_mlt_mine_small/obj_mlt_mine_small.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_mine_small","path":"objects/obj_mlt_mine_small/obj_mlt_mine_small.yy",},"propertyId":{"name":"projectiles_amount","path":"objects/obj_mlt_mine_small/obj_mlt_mine_small.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"enemies",

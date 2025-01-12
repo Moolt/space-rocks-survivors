@@ -16,7 +16,7 @@ spawn_chances = [
     },
     {
         object: obj_mlt_mine_big,
-        base_chance: 0,
+        base_chance: -80,
         chance_stage_increment: 40
     },
     {

@@ -86,9 +86,9 @@ bonuses = [
     },
     {
         group: 3,
-        title: "+1 Live",
+        title: "+2 Lives",
         action: function() {
-            global.mlt_max_lives += 1;
+            global.mlt_max_lives += 2;
         }
     },
     {
