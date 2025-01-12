@@ -47,6 +47,8 @@
     {"id":{"name":"obj_mlt_player","path":"objects/obj_mlt_player/obj_mlt_player.yy",},},
     {"id":{"name":"obj_mlt_rock_big","path":"objects/obj_mlt_rock_big/obj_mlt_rock_big.yy",},},
     {"id":{"name":"obj_mlt_rock_small","path":"objects/obj_mlt_rock_small/obj_mlt_rock_small.yy",},},
+    {"id":{"name":"obj_mlt_splashscreen","path":"objects/obj_mlt_splashscreen/obj_mlt_splashscreen.yy",},},
+    {"id":{"name":"room_mlt_space_rocks_splash","path":"rooms/room_mlt_space_rocks_splash/room_mlt_space_rocks_splash.yy",},},
     {"id":{"name":"room_mlt_space_rocks","path":"rooms/room_mlt_space_rocks/room_mlt_space_rocks.yy",},},
     {"id":{"name":"scr_api","path":"scripts/scr_api/scr_api.yy",},},
     {"id":{"name":"scr_mlt_globals","path":"scripts/scr_mlt_globals/scr_mlt_globals.yy",},},
@@ -65,6 +67,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_mlt_space_rocks_splash","path":"rooms/room_mlt_space_rocks_splash/room_mlt_space_rocks_splash.yy",},},
     {"roomId":{"name":"room_mlt_space_rocks","path":"rooms/room_mlt_space_rocks/room_mlt_space_rocks.yy",},},
   ],
   "templateType":"game",
