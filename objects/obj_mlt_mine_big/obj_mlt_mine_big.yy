@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mlt_enemy_twice",
-    "path":"sprites/spr_mlt_enemy_twice/spr_mlt_enemy_twice.yy",
+    "name":"spr_mlt_bomb_big",
+    "path":"sprites/spr_mlt_bomb_big/spr_mlt_bomb_big.yy",
   },
   "spriteMaskId":null,
   "visible":true,

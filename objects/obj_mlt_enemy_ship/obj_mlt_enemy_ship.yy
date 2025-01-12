@@ -11,6 +11,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"enemy_lives","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"enemy_score","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
   ],
   "parent":{
     "name":"enemies",
@@ -34,7 +35,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"projectile_speed","filters":[],"listItems":[],"multiselect":false,"name":"projectile_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"projectile_speed","filters":[],"listItems":[],"multiselect":false,"name":"projectile_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"shoot_frequency","filters":[],"listItems":[],"multiselect":false,"name":"shoot_frequency","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"110","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"turn_speed","filters":[],"listItems":[],"multiselect":false,"name":"turn_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.9","varType":0,},
   ],
@@ -45,6 +46,9 @@
     "name":"spr_mlt_player",
     "path":"sprites/spr_mlt_player/spr_mlt_player.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_mlt_bullet",
+    "path":"sprites/spr_mlt_bullet/spr_mlt_bullet.yy",
+  },
   "visible":true,
 }

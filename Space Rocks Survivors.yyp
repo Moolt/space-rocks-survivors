@@ -65,6 +65,8 @@
     {"id":{"name":"snd_mlt_explosion","path":"sounds/snd_mlt_explosion/snd_mlt_explosion.yy",},},
     {"id":{"name":"snd_mlt_music","path":"sounds/snd_mlt_music/snd_mlt_music.yy",},},
     {"id":{"name":"spr_mlt_background","path":"sprites/spr_mlt_background/spr_mlt_background.yy",},},
+    {"id":{"name":"spr_mlt_bomb_big","path":"sprites/spr_mlt_bomb_big/spr_mlt_bomb_big.yy",},},
+    {"id":{"name":"spr_mlt_bomb_small","path":"sprites/spr_mlt_bomb_small/spr_mlt_bomb_small.yy",},},
     {"id":{"name":"spr_mlt_bullet","path":"sprites/spr_mlt_bullet/spr_mlt_bullet.yy",},},
     {"id":{"name":"spr_mlt_card","path":"sprites/spr_mlt_card/spr_mlt_card.yy",},},
     {"id":{"name":"spr_mlt_enemy_four","path":"sprites/spr_mlt_enemy_four/spr_mlt_enemy_four.yy",},},

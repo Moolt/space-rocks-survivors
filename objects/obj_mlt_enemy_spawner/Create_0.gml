@@ -9,13 +9,39 @@ spawn_chances = [
         base_chance: 300,
         chance_stage_increment: 0
     },
+    {
+        object: obj_mlt_mine_small,
+        base_chance: 0,
+        chance_stage_increment: 50
+    },
+    {
+        object: obj_mlt_mine_big,
+        base_chance: 0,
+        chance_stage_increment: 40
+    },
+    {
+        object: obj_mlt_spin_2,
+        base_chance: -120,
+        chance_stage_increment: 30
+    },
+    {
+        object: obj_mlt_spin_4,
+        base_chance: -160,
+        chance_stage_increment: 20
+    },
+    {
+        object: obj_mlt_enemy_ship,
+        base_chance: -100,
+        chance_stage_increment: 40
+    },
 ];
 
 function get_max_chance() {
     var max_chance = 0;
     for(var _i = 0; _i < array_length(spawn_chances); _i++) {
         var current = spawn_chances[_i];
-        max_chance += current.base_chance + current.chance_stage_increment * obj_mlt_game.stage;
+        var absolute_chance = current.base_chance + current.chance_stage_increment * (obj_mlt_game.stage - 1);
+        max_chance += max(0, absolute_chance);
     }
     
     return max_chance;
@@ -27,7 +53,8 @@ function get_enemy_to_spawn() {
     
     for(var _i = 0; _i < array_length(spawn_chances); _i++) {
         var current = spawn_chances[_i];
-        current_chance += current.base_chance + current.chance_stage_increment * obj_mlt_game.stage;
+        var absolute_chance = current.base_chance + current.chance_stage_increment * (obj_mlt_game.stage - 1);
+        current_chance += max(0, absolute_chance);
         
         if(random_value < current_chance) {
             return current.object;    
