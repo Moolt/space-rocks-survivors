@@ -21,12 +21,12 @@ spawn_chances = [
     },
     {
         object: obj_mlt_spin_2,
-        base_chance: -120,
+        base_chance: -100,
         chance_stage_increment: 30
     },
     {
         object: obj_mlt_spin_4,
-        base_chance: -160,
+        base_chance: -150,
         chance_stage_increment: 20
     },
     {
@@ -58,7 +58,7 @@ function get_enemy_to_spawn() {
         
         if(random_value < current_chance) {
             return current.object;    
-        }        
+        }
     }
 }
 
@@ -73,11 +73,11 @@ function spawn_enemy() {
     instance_create_layer(x_pos, y_pos, "Instances", obj_mlt_enemy_spawner.get_enemy_to_spawn());
 }
 
-for(var _i = 0; _i < 5; _i++) {
+for(var _i = 0; _i < 10; _i++) {
     spawn_enemy();
 }
 
-spawn_rate_seconds = 1;
+spawn_rate_seconds = max(0.8, 2 - (obj_mlt_game.stage * 0.05));
 spawn_time_source = time_source_create(time_source_game, spawn_rate_seconds, time_source_units_seconds, spawn_enemy, [], -1);
 
 time_source_start(spawn_time_source);

@@ -36,60 +36,381 @@ function get_card_y(_index) {
 
 bonuses = [
     {
-        title: "+10% Max Speed",
+        group: 1,
+        title: "+40% Max Speed",
         action: function() {
-            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 10);
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 40);
         }
     },
     {
-        title: "+15% Max Speed",
+        group: 1,
+        title: "+50% Max Speed",
         action: function() {
-            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 15);
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 50);
         }
     },
     {
-        title: "+20% Max Speed",
+        group: 2,
+        title: "+40% Acceleration",
         action: function() {
-            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 20);
+            global.mlt_acceleration += mlt_percent(global.mlt_acceleration, 40);
         }
     },
     {
-        title: "+0.25 Max Speed",
+        group: 2,
+        title: "+45% Acceleration",
         action: function() {
-            global.mlt_max_speed += 0.25;
+            global.mlt_acceleration += mlt_percent(global.mlt_acceleration, 45);
         }
     },
     {
-        title: "+0.5 Max Speed",
+        group: 3,
+        title: "+1 Live",
         action: function() {
-            global.mlt_max_speed += 0.5;
+            global.mlt_max_lives += 1;
         }
     },
     {
-        title: "+0.75 Max Speed",
+        group: 3,
+        title: "+1 Live",
         action: function() {
-            global.mlt_max_speed += 0.75;
+            global.mlt_max_lives += 1;
         }
     },
     {
-        title: "+1 Armor",
+        group: 3,
+        title: "+1 Live",
         action: function() {
-                show_debug_message("second");
+            global.mlt_max_lives += 1;
+        }
+    },
+    {
+        group: 3,
+        title: "+1 Live",
+        action: function() {
+            global.mlt_max_lives += 1;
+        }
+    },
+    {
+        group: 3,
+        title: "+2 Lives",
+        action: function() {
+            global.mlt_max_lives += 2;
+        }
+    },
+    {
+        group: 4,
+        title: "+50 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score += 50;
+        }
+    },
+    {
+        group: 4,
+        title: "+75 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score += 75;
+        }
+    },
+    {
+        group: 5,
+        title: "+20% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1.20;
+        }
+    },
+    {
+        group: 5,
+        title: "+25% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1.25;
+        }
+    },
+    {
+        group: 6,
+        title: "+1 Bullet damage",
+        action: function() {
+            global.mlt_bullet_damage += 1;
+        }
+    },
+    {
+        group: 6,
+        title: "+1 Bullet damage",
+        action: function() {
+            global.mlt_bullet_damage += 1;
+        }
+    },
+    {
+        group: 7,
+        title: "+1 Bullet on shot",
+        action: function() {
+            global.mlt_shot_amount += 1;
+        }
+    },
+    {
+        group: 7,
+        title: "+1 Bullet on shot",
+        action: function() {
+            global.mlt_shot_amount += 1;
+        }
+    },
+    {
+        group: 7,
+        title: "+2 Bullet on shot",
+        action: function() {
+            global.mlt_shot_amount += 2;
+        }
+    },
+    {
+        group: 8,
+        title: "+20% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed -= mlt_percent(global.mlt_shoot_speed, 20);
+        }
+    },
+    {
+        group: 8,
+        title: "+30% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed -= mlt_percent(global.mlt_shoot_speed, 30);
+        }
+    },
+    {
+        group: 8,
+        title: "+40% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed -= mlt_percent(global.mlt_shoot_speed, 40);
+        }
+    },
+    {
+        group: 9,
+        title: "+Increase projectile spread",
+        action: function() {
+            global.mlt_shot_spread += 10;
+        }
+    },
+    {
+        group: 9,
+        title: "+Increase projectile spread",
+        action: function() {
+            global.mlt_shot_spread += 10;
         }
     },
 ];
 
+#macro MIN_MAX_SPEED 0.5
+#macro MIN_ACCELERATION 0.05
+#macro MIN_LIVES 1
+#macro MIN_BONUS_SCORE 0
+#macro MIN_SCORE_MULTIPLICATOR 0
+#macro MIN_BULLET_DAMAGE 1
+#macro MIN_BULLET_ON_SHOT 1
+#macro MIN_PROJECTILE_SPREAD 5
+
 maluses = [
     {
-        title: "-1 Shoot speed",
+        group: 1,
+        title: "-15% Max Speed",
         action: function() {
-                show_debug_message("second");
+            global.mlt_max_speed -= mlt_percent(global.mlt_max_speed, 15);
+            global.mlt_max_speed = max(MIN_MAX_SPEED, global.mlt_max_speed);
         }
     },
     {
-        title: "-10% Max speed",
+        group: 1,
+        title: "-20% Max Speed",
         action: function() {
-                show_debug_message("second");
+            global.mlt_max_speed -= mlt_percent(global.mlt_max_speed, 20);
+            global.mlt_max_speed = max(MIN_MAX_SPEED, global.mlt_max_speed);
+        }
+    },
+    {
+        group: 1,
+        title: "-25% Max Speed",
+        action: function() {
+            global.mlt_max_speed -= mlt_percent(global.mlt_max_speed, 25);
+            global.mlt_max_speed = max(MIN_MAX_SPEED, global.mlt_max_speed);
+        }
+    },
+    {
+        group: 2,
+        title: "-25% Acceleration",
+        action: function() {
+            global.mlt_acceleration -= mlt_percent(global.mlt_acceleration, 25);
+            global.mlt_acceleration = max(MIN_ACCELERATION, global.mlt_acceleration);
+        }
+    },
+    {
+        group: 2,
+        title: "-30% Acceleration",
+        action: function() {
+            global.mlt_acceleration -= mlt_percent(global.mlt_acceleration, 30);
+            global.mlt_acceleration = max(MIN_ACCELERATION, global.mlt_acceleration);
+        }
+    },
+    {
+        group: 2,
+        title: "-40% Acceleration",
+        action: function() {
+            global.mlt_acceleration -= mlt_percent(global.mlt_acceleration, 40);
+            global.mlt_acceleration = max(MIN_ACCELERATION, global.mlt_acceleration);
+        }
+    },
+    {
+        group: 2,
+        title: "-45% Acceleration",
+        action: function() {
+            global.mlt_acceleration -= mlt_percent(global.mlt_acceleration, 45);
+            global.mlt_acceleration = max(MIN_ACCELERATION, global.mlt_acceleration);
+        }
+    },
+    {
+        group: 3,
+        title: "-1 Live",
+        action: function() {
+            global.mlt_max_lives -= 1;
+            global.mlt_max_lives = max(MIN_LIVES, global.mlt_max_lives);
+        }
+    },
+    {
+        group: 3,
+        title: "-1 Live",
+        action: function() {
+            global.mlt_max_lives -= 1;
+            global.mlt_max_lives = max(MIN_LIVES, global.mlt_max_lives);
+        }
+    },
+    {
+        group: 4,
+        title: "-25 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score -= 25;
+            global.mlt_bonus_score = max(MIN_BONUS_SCORE, global.mlt_bonus_score);
+        }
+    },
+    {
+        group: 4,
+        title: "-50 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score -= 50;
+            global.mlt_bonus_score = max(MIN_BONUS_SCORE, global.mlt_bonus_score);
+        }
+    },
+    {
+        group: 4,
+        title: "-25 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score -= 25;
+            global.mlt_bonus_score = max(MIN_BONUS_SCORE, global.mlt_bonus_score);
+        }
+    },
+    {
+        group: 4,
+        title: "-50 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score -= 50;
+            global.mlt_bonus_score = max(MIN_BONUS_SCORE, global.mlt_bonus_score);
+        }
+    },
+    {
+        group: 4,
+        title: "-75 Bonus score on kill",
+        action: function() {
+            global.mlt_bonus_score -= 75;
+            global.mlt_bonus_score = max(MIN_BONUS_SCORE, global.mlt_bonus_score);
+        }
+    },
+    {
+        group: 5,
+        title: "-10% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1/1.1;
+            global.mlt_score_multiplicator = max(MIN_SCORE_MULTIPLICATOR, global.mlt_score_multiplicator);
+        }
+    },
+    {
+        group: 5,
+        title: "-15% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1/1.15;
+            global.mlt_score_multiplicator = max(MIN_SCORE_MULTIPLICATOR, global.mlt_score_multiplicator);
+        }
+    },
+    {
+        group: 5,
+        title: "-20% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1/1.20;
+            global.mlt_score_multiplicator = max(MIN_SCORE_MULTIPLICATOR, global.mlt_score_multiplicator);
+        }
+    },
+    {
+        group: 5,
+        title: "-25% Score on kill",
+        action: function() {
+            global.mlt_score_multiplicator *= 1/1.25;
+            global.mlt_score_multiplicator = max(MIN_SCORE_MULTIPLICATOR, global.mlt_score_multiplicator);
+        }
+    },
+    {
+        group: 6,
+        title: "-1 Bullet damage",
+        action: function() {
+            global.mlt_bullet_damage -= 1;
+            global.mlt_bullet_damage = max(MIN_BULLET_DAMAGE, global.mlt_bullet_damage);
+        }
+    },
+    {
+        group: 6,
+        title: "-1 Bullet damage",
+        action: function() {
+            global.mlt_bullet_damage -= 1;
+            global.mlt_bullet_damage = max(MIN_BULLET_DAMAGE, global.mlt_bullet_damage);
+        }
+    },
+    {
+        group: 7,
+        title: "-1 Bullet on shot",
+        action: function() {
+            global.mlt_shot_amount -= 1;
+            global.mlt_shot_amount = max(MIN_BULLET_ON_SHOT, global.mlt_shot_amount);
+        }
+    },
+    {
+        group: 8,
+        title: "-20% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed += mlt_percent(global.mlt_shoot_speed, 20);
+        }
+    },
+    {
+        group: 8,
+        title: "-30% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed += mlt_percent(global.mlt_shoot_speed, 30);
+        }
+    },
+    {
+        group: 8,
+        title: "-40% Shooting speed",
+        action: function() {
+            global.mlt_shoot_speed += mlt_percent(global.mlt_shoot_speed, 40);
+        }
+    },
+    {
+        group: 9,
+        title: "-Decrease projectile spread",
+        action: function() {
+            global.mlt_shot_spread -= 10;
+            global.mlt_shot_spread = max(MIN_PROJECTILE_SPREAD, global.mlt_shot_spread);
+        }
+    },
+    {
+        group: 9,
+        title: "-Decrease projectile spread",
+        action: function() {
+            global.mlt_shot_spread -= 10;
+            global.mlt_shot_spread = max(MIN_PROJECTILE_SPREAD, global.mlt_shot_spread);
         }
     },
 ];
@@ -97,6 +418,10 @@ maluses = [
 function create_random_option() {
     var bonus = bonuses[irandom(array_length(bonuses) - 1)];
     var malus = maluses[irandom(array_length(maluses) - 1)];
+    
+    while(malus.group == bonus.group) {
+        malus = maluses[irandom(array_length(maluses) - 1)];
+    }
     
     return { bonus: bonus, malus: malus };
 }
