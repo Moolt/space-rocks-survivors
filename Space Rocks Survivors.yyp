@@ -46,6 +46,7 @@
     {"id":{"name":"obj_mlt_rock_big","path":"objects/obj_mlt_rock_big/obj_mlt_rock_big.yy",},},
     {"id":{"name":"room_mlt_space_rocks","path":"rooms/room_mlt_space_rocks/room_mlt_space_rocks.yy",},},
     {"id":{"name":"scr_api","path":"scripts/scr_api/scr_api.yy",},},
+    {"id":{"name":"scr_mlt_globals","path":"scripts/scr_mlt_globals/scr_mlt_globals.yy",},},
     {"id":{"name":"snd_mlt_bullet","path":"sounds/snd_mlt_bullet/snd_mlt_bullet.yy",},},
     {"id":{"name":"snd_mlt_explosion","path":"sounds/snd_mlt_explosion/snd_mlt_explosion.yy",},},
     {"id":{"name":"snd_mlt_music","path":"sounds/snd_mlt_music/snd_mlt_music.yy",},},

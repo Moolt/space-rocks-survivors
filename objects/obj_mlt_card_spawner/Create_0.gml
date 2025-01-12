@@ -1,9 +1,16 @@
+#macro MLT_STATS_CONTAINER_WIDTH 350
+
 global.mlt_is_selecting = true;
 
-padding = 90;
+h_offset = 130;
+v_offset = 32 + 8; // stats container item spacing
+label_y = 0; // stats container current label y
+
+padding_y = 90;
+padding_x = 45;
 spacing = 16;
 max_cards = 3;
-var card_center = MLT_GAME_WIDTH / 2 - MLT_CARD_WIDTH / 2;
+var card_center = MLT_GAME_WIDTH / 2 - MLT_CARD_WIDTH / 2 + 50 + h_offset;
 var index = 0;
 
 card1 = noone;
@@ -24,55 +31,46 @@ function select(_option) {
 }
 
 function get_card_y(_index) {
-    return padding + (MLT_GAME_HEIGHT - padding * 2) / max_cards * _index;
+    return padding_y + (MLT_GAME_HEIGHT - padding_y * 2) / max_cards * _index;
 }
 
-card = {
-    icon: spr_mlt_loser,
-    title: "+1 Lives",
-    action: function() {
-        show_debug_message("first");
+bonuses = [
+    {
+        title: "+1 Speed",
+        action: function() {
+                show_debug_message("second");
+        }
     },
-    unique: false,
-    is_maxed_out : function() {
-        return false;
-    }
-}
-
-card2 = {
-    icon: spr_mlt_loser,
-    title: "-1 Speed",
-    action: function() {
-            show_debug_message("second");
+    {
+        title: "+1 Armor",
+        action: function() {
+                show_debug_message("second");
+        }
     },
-    unique: false,
-    is_maxed_out : function() {
-        return false;
-    }
-}
+];
 
-card3 = {
-    icon: spr_mlt_loser,
-    title: "+1 Defense",
-    action: function() {
-            show_debug_message("third");
+maluses = [
+    {
+        title: "-1 Shoot speed",
+        action: function() {
+                show_debug_message("second");
+        }
     },
-    unique: false,
-    is_maxed_out : function() {
-        return false;
-    }
+    {
+        title: "-10% Max speed",
+        action: function() {
+                show_debug_message("second");
+        }
+    },
+];
+
+function create_random_option() {
+    var bonus = bonuses[irandom(array_length(bonuses) - 1)];
+    var malus = maluses[irandom(array_length(maluses) - 1)];
+    
+    return { bonus: bonus, malus: malus };
 }
 
-option = {
-    bonus: card3,
-    malus: card2,
-}
-
-option2 = {
-    bonus: card,
-    malus: card2,
-}
-
-card1 = instance_create_layer(card_center, get_card_y(0), "Instances", obj_mlt_card, { option: option });
-card2 = instance_create_layer(card_center, get_card_y(1), "Instances", obj_mlt_card, { option: option2 });
-card3 = instance_create_layer(card_center, get_card_y(2), "Instances", obj_mlt_card, { option: option });
+card1 = instance_create_layer(card_center, get_card_y(0), "Instances", obj_mlt_card, { option: create_random_option() });
+card2 = instance_create_layer(card_center, get_card_y(1), "Instances", obj_mlt_card, { option: create_random_option() });
+card3 = instance_create_layer(card_center, get_card_y(2), "Instances", obj_mlt_card, { option: create_random_option() });
