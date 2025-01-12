@@ -2,7 +2,7 @@ function init_globals() {
     global.mlt_is_selecting = false;
     global.mlt_current_score = 0;
     
-    global.mlt_max_speed = 5;
+    global.mlt_max_speed = 1.5;
     global.mlt_acceleration = 0.05;
     global.mlt_shoot_speed = 1;
     global.mlt_shot_amount = 1;
@@ -13,6 +13,8 @@ function init_globals() {
     
     global.mlt_bonus_score = 0;
     global.mlt_score_multiplicator = 1;
+    
+    global.mlt_bullet_damage = 1;
 }
 
 function mlt_grant_score(_value) {

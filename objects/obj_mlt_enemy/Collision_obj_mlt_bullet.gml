@@ -1,4 +1,4 @@
-enemy_lives -= 1;
+enemy_lives = max(0, enemy_lives - global.mlt_bullet_damage);
 
 instance_destroy(other);
 
