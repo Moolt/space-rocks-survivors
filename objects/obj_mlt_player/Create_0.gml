@@ -3,8 +3,8 @@ function _hello_world(){
 }
 
 function _shoot() {
-	with(obj_demo_player) {
-		instance_create_layer(x, y, "Instances", obj_demo_bullet);
+	with(obj_mlt_player) {
+		instance_create_layer(x, y, "Instances", obj_mlt_bullet);
 	}
 }
 

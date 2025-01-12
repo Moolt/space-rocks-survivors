@@ -3,5 +3,3 @@ if(API.action_check(INPUT_ACTION.MOVE_UP)) {
 }
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
-
-move_wrap(true, true, false);

@@ -37,6 +37,7 @@
   "name":"Space Rocks Survivors",
   "resources":[
     {"id":{"name":"obj_mlt_bullet","path":"objects/obj_mlt_bullet/obj_mlt_bullet.yy",},},
+    {"id":{"name":"obj_mlt_camera","path":"objects/obj_mlt_camera/obj_mlt_camera.yy",},},
     {"id":{"name":"obj_mlt_game","path":"objects/obj_mlt_game/obj_mlt_game.yy",},},
     {"id":{"name":"obj_mlt_player","path":"objects/obj_mlt_player/obj_mlt_player.yy",},},
     {"id":{"name":"obj_mlt_rock_big","path":"objects/obj_mlt_rock_big/obj_mlt_rock_big.yy",},},
