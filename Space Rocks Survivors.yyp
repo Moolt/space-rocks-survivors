@@ -28,6 +28,7 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"game.json","CopyToMask":-1,"filePath":"datafiles","name":"game.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"m5x7.ttf","CopyToMask":-1,"filePath":"datafiles","name":"m5x7.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -38,6 +39,8 @@
   "resources":[
     {"id":{"name":"obj_mlt_bullet","path":"objects/obj_mlt_bullet/obj_mlt_bullet.yy",},},
     {"id":{"name":"obj_mlt_camera","path":"objects/obj_mlt_camera/obj_mlt_camera.yy",},},
+    {"id":{"name":"obj_mlt_card_spawner","path":"objects/obj_mlt_card_spawner/obj_mlt_card_spawner.yy",},},
+    {"id":{"name":"obj_mlt_card","path":"objects/obj_mlt_card/obj_mlt_card.yy",},},
     {"id":{"name":"obj_mlt_game","path":"objects/obj_mlt_game/obj_mlt_game.yy",},},
     {"id":{"name":"obj_mlt_player","path":"objects/obj_mlt_player/obj_mlt_player.yy",},},
     {"id":{"name":"obj_mlt_rock_big","path":"objects/obj_mlt_rock_big/obj_mlt_rock_big.yy",},},
@@ -47,6 +50,7 @@
     {"id":{"name":"snd_mlt_explosion","path":"sounds/snd_mlt_explosion/snd_mlt_explosion.yy",},},
     {"id":{"name":"snd_mlt_music","path":"sounds/snd_mlt_music/snd_mlt_music.yy",},},
     {"id":{"name":"spr_mlt_bullet","path":"sprites/spr_mlt_bullet/spr_mlt_bullet.yy",},},
+    {"id":{"name":"spr_mlt_card","path":"sprites/spr_mlt_card/spr_mlt_card.yy",},},
     {"id":{"name":"spr_mlt_loser","path":"sprites/spr_mlt_loser/spr_mlt_loser.yy",},},
     {"id":{"name":"spr_mlt_player","path":"sprites/spr_mlt_player/spr_mlt_player.yy",},},
     {"id":{"name":"spr_mlt_rock_big","path":"sprites/spr_mlt_rock_big/spr_mlt_rock_big.yy",},},

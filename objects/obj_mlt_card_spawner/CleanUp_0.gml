@@ -1,0 +1,1 @@
+global.mlt_is_selecting = false;
