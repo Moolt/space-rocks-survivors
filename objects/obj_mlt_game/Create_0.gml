@@ -13,5 +13,5 @@ stage_time_source = time_source_create(time_source_game, 1, time_source_units_se
     }
 }, [], global.mlt_stage_duration_seconds);
 
-//music = API.play_music(snd_demo_music, 1, true);
+music = API.play_music(snd_mlt_music, 1, true);
 displayed_score = 0;

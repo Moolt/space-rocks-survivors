@@ -37,16 +37,16 @@ function get_card_y(_index) {
 bonuses = [
     {
         group: 1,
-        title: "+40% Max Speed",
+        title: "+50% Max Speed",
         action: function() {
-            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 40);
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 50);
         }
     },
     {
         group: 1,
-        title: "+50% Max Speed",
+        title: "+70% Max Speed",
         action: function() {
-            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 50);
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 70);
         }
     },
     {
@@ -58,9 +58,9 @@ bonuses = [
     },
     {
         group: 2,
-        title: "+45% Acceleration",
+        title: "+60% Acceleration",
         action: function() {
-            global.mlt_acceleration += mlt_percent(global.mlt_acceleration, 45);
+            global.mlt_acceleration += mlt_percent(global.mlt_acceleration, 60);
         }
     },
     {
@@ -96,6 +96,13 @@ bonuses = [
         title: "+2 Lives",
         action: function() {
             global.mlt_max_lives += 2;
+        }
+    },
+    {
+        group: 3,
+        title: "+3 Lives",
+        action: function() {
+            global.mlt_max_lives += 3;
         }
     },
     {
@@ -156,9 +163,23 @@ bonuses = [
     },
     {
         group: 7,
-        title: "+2 Bullet on shot",
+        title: "+1 Bullet on shot",
+        action: function() {
+            global.mlt_shot_amount += 1;
+        }
+    },
+    {
+        group: 7,
+        title: "+2 Bullets on shot",
         action: function() {
             global.mlt_shot_amount += 2;
+        }
+    },
+    {
+        group: 7,
+        title: "+3 Bullets on shot",
+        action: function() {
+            global.mlt_shot_amount += 3;
         }
     },
     {
