@@ -7,6 +7,9 @@ var v_speed_change = lengthdir_y(global.mlt_acceleration, image_angle);
 if(API.action_check(INPUT_ACTION.MOVE_UP)) {
     h_speed += h_speed_change;
     v_speed += v_speed_change;
+} else if(API.action_check(INPUT_ACTION.MOVE_DOWN)) {
+    h_speed -= h_speed_change;
+    v_speed -= v_speed_change;
 } else {
     if(h_speed > 0) {
         h_speed -= global.mlt_acceleration;

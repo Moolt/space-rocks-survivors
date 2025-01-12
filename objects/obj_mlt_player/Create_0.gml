@@ -4,12 +4,12 @@
  * ++ Schneller schießen
  * kritischer treffen chance
  * kritischer treffer multiplikator
- * schaden
+ * ++schaden
  * ++ geschwindigkeit bewegen
  * ++ geschwindigkeit beschleunigen
  * homing
  * chance ausweichen
- * mehrfach schuss
+ * ++mehrfach schuss
  * projektil größe
  * */
 
