@@ -1,7 +1,7 @@
 /*
  * Buffs:
  * Hitbox größer kleiner
- * Schneller schießen
+ * ++ Schneller schießen
  * kritischer treffen chance
  * kritischer treffer multiplikator
  * schaden
@@ -11,15 +11,20 @@
  * chance ausweichen
  * mehrfach schuss
  * projektil größe
- * accelleration
  * */
 
 v_speed = 0;
 h_speed = 0;
 
 function _shoot() {
+    API.play_sound(snd_mlt_bullet);
+    
 	with(obj_mlt_player) {
-		instance_create_layer(x, y, "Instances", obj_mlt_bullet);
+        var max_angle = (global.mlt_shot_amount - 1) * global.mlt_shot_spread;
+        
+        for(var _i = 0; _i < global.mlt_shot_amount; _i++) {
+            instance_create_layer(x, y, "Instances", obj_mlt_bullet, { direction: image_angle - max_angle / 2 + _i * global.mlt_shot_spread});
+        }
 	}
 }
 

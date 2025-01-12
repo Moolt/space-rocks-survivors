@@ -34,11 +34,43 @@ function get_card_y(_index) {
     return padding_y + (MLT_GAME_HEIGHT - padding_y * 2) / max_cards * _index;
 }
 
+
+
 bonuses = [
     {
-        title: "+1 Speed",
+        title: "+10% Max Speed",
         action: function() {
-                show_debug_message("second");
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 10);
+        }
+    },
+    {
+        title: "+15% Max Speed",
+        action: function() {
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 15);
+        }
+    },
+    {
+        title: "+20% Max Speed",
+        action: function() {
+            global.mlt_max_speed += mlt_percent(global.mlt_max_speed, 20);
+        }
+    },
+    {
+        title: "+0.25 Max Speed",
+        action: function() {
+            global.mlt_max_speed += 0.25;
+        }
+    },
+    {
+        title: "+0.5 Max Speed",
+        action: function() {
+            global.mlt_max_speed += 0.5;
+        }
+    },
+    {
+        title: "+0.75 Max Speed",
+        action: function() {
+            global.mlt_max_speed += 0.75;
         }
     },
     {
