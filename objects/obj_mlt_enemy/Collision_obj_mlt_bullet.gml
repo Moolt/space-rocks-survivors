@@ -1,3 +1,7 @@
+if(immortal) {
+    return;
+}
+
 enemy_lives = max(0, enemy_lives - global.mlt_bullet_damage);
 
 instance_destroy(other);
