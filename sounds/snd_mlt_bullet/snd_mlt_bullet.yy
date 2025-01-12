@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_demo_bullet",
+  "%Name":"snd_mlt_bullet",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":1.146916,
-  "name":"snd_demo_bullet",
+  "name":"snd_mlt_bullet",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_demo_bullet.wav",
+  "soundFile":"snd_mlt_bullet.wav",
   "type":0,
   "volume":1.0,
 }

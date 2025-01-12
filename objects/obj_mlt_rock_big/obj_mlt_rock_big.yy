@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_demo_player",
+  "%Name":"obj_mlt_rock_big",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_demo_rock_big","path":"objects/obj_demo_rock_big/obj_demo_rock_big.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_mlt_bullet","path":"objects/obj_mlt_bullet/obj_mlt_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_demo_player",
+  "name":"obj_mlt_rock_big",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_demo_player",
-    "path":"sprites/spr_demo_player/spr_demo_player.yy",
+    "name":"spr_mlt_rock_big",
+    "path":"sprites/spr_mlt_rock_big/spr_mlt_rock_big.yy",
   },
   "spriteMaskId":null,
   "visible":true,
