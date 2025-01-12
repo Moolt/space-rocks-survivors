@@ -1,3 +1,3 @@
-move_wrap(true, true, 100);
+event_inherited();
 
 image_angle += 1;

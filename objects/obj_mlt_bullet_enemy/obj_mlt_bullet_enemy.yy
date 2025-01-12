@@ -9,6 +9,7 @@
   "name":"obj_mlt_bullet_enemy",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"immortal","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"propertyId":{"name":"follow_player","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"enemies",

@@ -43,6 +43,8 @@
     {"id":{"name":"obj_mlt_camera","path":"objects/obj_mlt_camera/obj_mlt_camera.yy",},},
     {"id":{"name":"obj_mlt_card_spawner","path":"objects/obj_mlt_card_spawner/obj_mlt_card_spawner.yy",},},
     {"id":{"name":"obj_mlt_card","path":"objects/obj_mlt_card/obj_mlt_card.yy",},},
+    {"id":{"name":"obj_mlt_enemy_ship","path":"objects/obj_mlt_enemy_ship/obj_mlt_enemy_ship.yy",},},
+    {"id":{"name":"obj_mlt_enemy_spawner","path":"objects/obj_mlt_enemy_spawner/obj_mlt_enemy_spawner.yy",},},
     {"id":{"name":"obj_mlt_enemy","path":"objects/obj_mlt_enemy/obj_mlt_enemy.yy",},},
     {"id":{"name":"obj_mlt_game","path":"objects/obj_mlt_game/obj_mlt_game.yy",},},
     {"id":{"name":"obj_mlt_mine_big","path":"objects/obj_mlt_mine_big/obj_mlt_mine_big.yy",},},
