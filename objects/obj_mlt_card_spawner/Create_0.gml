@@ -27,14 +27,12 @@ function select(_option) {
         instance_destroy(card3);
     }
     
-    instance_destroy();
+    room_goto(room_mlt_space_rocks_game);
 }
 
 function get_card_y(_index) {
     return padding_y + (MLT_GAME_HEIGHT - padding_y * 2) / max_cards * _index;
 }
-
-
 
 bonuses = [
     {

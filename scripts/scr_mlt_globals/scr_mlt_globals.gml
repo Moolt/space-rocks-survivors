@@ -2,6 +2,8 @@ global.mlt_pixel_font_title = font_add("m5x7.ttf", 96, false, false, 32, 128);
 global.mlt_pixel_font_medium = font_add("m5x7.ttf", 48, false, false, 32, 128);
 global.mlt_pixel_font = font_add("m5x7.ttf", 32, false, false, 32, 128);
 
+global.mlt_stage_duration_seconds = 4;
+
 function init_globals() {
     global.mlt_is_selecting = false;
     global.mlt_current_score = 0;

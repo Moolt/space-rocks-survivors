@@ -1,1 +1,2 @@
+instance_destroy(obj_mlt_game);
 room_goto(room_mlt_space_rocks_game_over);
