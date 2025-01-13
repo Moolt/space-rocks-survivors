@@ -1,1 +1,1 @@
-death_sound = snd_mlt_explosion;
+death_sound = undefined;

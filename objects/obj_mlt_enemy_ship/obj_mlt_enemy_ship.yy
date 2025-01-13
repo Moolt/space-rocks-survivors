@@ -46,9 +46,6 @@
     "name":"spr_mlt_player",
     "path":"sprites/spr_mlt_player/spr_mlt_player.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_mlt_bullet",
-    "path":"sprites/spr_mlt_bullet/spr_mlt_bullet.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
