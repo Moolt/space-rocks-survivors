@@ -1,0 +1,1 @@
+death_sound = snd_mlt_explosion;

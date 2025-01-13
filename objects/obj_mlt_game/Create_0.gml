@@ -1,7 +1,7 @@
 #macro MLT_GAME_WIDTH 1280
 #macro MLT_GAME_HEIGHT 720
 
-stage = 1;
+stage = 10;
 
 stage_time_source = time_source_create(time_source_game, 1, time_source_units_seconds, function()  {
     seconds_until_next_stage -= 1;

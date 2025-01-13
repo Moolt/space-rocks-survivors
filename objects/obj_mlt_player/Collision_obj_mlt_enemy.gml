@@ -1,7 +1,7 @@
 global.mlt_current_lives -= 1;
-global.mlt_current_lives -= max(0, global.mlt_current_lives);
+global.mlt_current_lives = max(0, global.mlt_current_lives);
 
-if(global.mlt_current_lives > 0) { 
+if(global.mlt_current_lives > 0) {
     return;
 }
 

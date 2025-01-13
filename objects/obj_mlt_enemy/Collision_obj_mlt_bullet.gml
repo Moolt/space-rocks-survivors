@@ -16,6 +16,6 @@ if(enemy_lives > 0) {
 mlt_grant_score(enemy_score);
 
 effect_create_above(ef_explosion, x, y, 1, c_white);
-API.play_sound(snd_mlt_explosion);
+API.play_sound(death_sound);
 
 instance_destroy();
