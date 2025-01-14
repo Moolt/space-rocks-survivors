@@ -11,8 +11,8 @@
   "name":"obj_mlt_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Space Rocks Survivors",
-    "path":"Space Rocks Survivors.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

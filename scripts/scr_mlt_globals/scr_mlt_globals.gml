@@ -24,7 +24,7 @@ function mlt_init_globals() {
 }
 
 function mlt_grant_score(_value) {
-    global.mlt_current_score += _value * global.mlt_score_multiplicator + global.mlt_bonus_score;
+    global.mlt_current_score += round(_value * global.mlt_score_multiplicator + global.mlt_bonus_score);
 }
 
 function mlt_percent(_value, _percentage) {
