@@ -17,6 +17,28 @@ card1 = noone;
 card2 = noone;
 card3 = noone;
 
+function check_achievements() {
+    if(global.mlt_max_speed >= 4) {
+        API.achievement_unlock("mlt_achievement_gotta_go_fast");
+    }
+    
+    if(global.mlt_shot_amount >= 10) {
+        API.achievement_unlock("mlt_achievement_bullet_hell");    
+    }
+    
+    if(global.mlt_max_lives >= 10) {
+        API.achievement_unlock("mlt_achievement_better_safe_than_sorry");    
+    }
+    
+    if(global.mlt_shot_spread <= MIN_PROJECTILE_SPREAD) {
+        API.achievement_unlock("mlt_achievement_sharp_shooter");    
+    }
+    
+    if(global.mlt_score_multiplicator >= 3 || global.mlt_bonus_score >= 150) {
+        API.achievement_unlock("mlt_achievement_moneten");    
+    }
+}
+
 function select(_option) {
     _option.bonus.action();
     _option.malus.action();
@@ -26,6 +48,8 @@ function select(_option) {
         instance_destroy(card2);
         instance_destroy(card3);
     }
+    
+    check_achievements();
     
     room_goto(room_mlt_space_rocks_game);
 }
