@@ -1,0 +1,1 @@
+music = API.play_music(snd_mlt_splash_bgm, 1, true);

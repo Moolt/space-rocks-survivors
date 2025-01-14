@@ -1,3 +1,5 @@
+window_set_cursor(cr_none);
+
 highscore = API.read_real("space_rocks_survivors", "highscore", 0);
 last_score = global.mlt_current_score;
 
@@ -16,4 +18,12 @@ if(room == room_mlt_space_rocks_splash) {
 } else {
     title_text = "Game Over";
     is_game_over = true;
+}
+
+music = undefined;
+
+if(is_game_over) {
+    alarm[0] = 200;
+} else {
+    alarm[0] = 1;
 }

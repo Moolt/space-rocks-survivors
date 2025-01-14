@@ -22,15 +22,7 @@ if(death_sound != undefined) {
     API.play_sound(death_sound);
 }
 else{
-    var snd = irandom(2);
-    
-    if(snd == 0) {
-        API.play_sound(snd_mlt_explosion_1);
-    } else if(snd == 1) {
-        API.play_sound(snd_mlt_explosion_2);
-    } else if(snd == 2) {
-        API.play_sound(snd_mlt_explosion_3);
-    }
+    play_explosion_sound();
 }
 
 instance_destroy();

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_mlt_music",
+  "%Name":"snd_mlt_splash_bgm",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":48.744373,
-  "name":"snd_mlt_music",
+  "duration":88.21551,
+  "name":"snd_mlt_splash_bgm",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_mlt_music.mp3",
+  "soundFile":"snd_mlt_splash_bgm.mp3",
   "type":0,
-  "volume":0.5,
+  "volume":1.0,
 }
