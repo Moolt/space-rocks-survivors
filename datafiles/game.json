@@ -1,15 +1,57 @@
 {
   "name": "Space Rocks Survivors",
   "author": "Moolt",
-  "description": "Kombiniert die Einfachheit des Space Rocks Tutorials mit der Genialität und Aktualität eines Survivors Spiels. \nÜberlebe solange es geht und suche dir tolle Upgrades raus die bestenfalls durch die Downgrades nicht ausgehebelt werden.\n Steuerung über W und S sowie Maus zum Angeben der Richtung.",
+  "description": "Combines the simplicity of the Space Rocks tutorial with the ingenuity and modernity of a Survivors game. \nSurvive as long as you can and choose great upgrades. But be careful! Each upgrade also includes a downgrade.\nMove with W and S and control the direction with the mouse.",
   "start_room": "room_mlt_space_rocks_splash",
   "images": ["spr_mlt_screenshot"],
   "achievements": [
     {
-      "id": "aa_legendary",
-      "name": "Legendary Status",
-      "description": "Achieve a level of greatness that is truly legendary!",
-      "image": "spr_aa_armchair"
+      "id": "mlt_achievement_gotta_go_fast",
+      "name": "Gotta go fast",
+      "description": "Movement speed of at least 4",
+      "image": "spr_mlt_achievement_fast"
+    },
+    {
+      "id": "mlt_achievement_bullet_hell",
+      "name": "Bullet hell",
+      "description": "Achieve multi shot with at least 10 bullets",
+      "image": "spr_mlt_achievement_bullet"
+    },
+    {
+      "id": "mlt_achievement_better_safe_than_sorry",
+      "name": "Better safe than sorry",
+      "description": "10 or move lives",
+      "image": "spr_mlt_achievement_safe"
+    },
+    {
+      "id": "mlt_achievement_sharp_shooter",
+      "name": "Sharp shooter",
+      "description": "Achieve multi shot with the least amount of bullet spread",
+      "image": "spr_mlt_achievement_sharp"
+    },
+    {
+      "id": "mlt_achievement_moneten",
+      "name": "Cash is king",
+      "description": "Score multiplicator of 3 or bonus score of 150",
+      "image": "spr_mlt_achievement_money"
+    },
+    {
+      "id": "mlt_achievement_loser",
+      "name": "Hoppla",
+      "description": "Die with a score of 0",
+      "image": "spr_mlt_achievement_loser"
+    },
+    {
+      "id": "mlt_achievement_survival_expert",
+      "name": "Survival expert",
+      "description": "Survive until stage 15",
+      "image": "spr_mlt_achievement_survival"
+    },
+    {
+      "id": "mlt_achievement_pacifist",
+      "name": "Pacifist",
+      "description": "Somehow manage to clear a stage without killing an enemy",
+      "image": "spr_mlt_achievement_pacifist"
     }
   ]
 }

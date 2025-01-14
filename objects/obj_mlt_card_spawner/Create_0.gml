@@ -30,7 +30,7 @@ function check_achievements() {
         API.achievement_unlock("mlt_achievement_better_safe_than_sorry");    
     }
     
-    if(global.mlt_shot_spread <= MIN_PROJECTILE_SPREAD) {
+    if(global.mlt_shot_spread <= MIN_PROJECTILE_SPREAD && global.mlt_shot_amount >= 2) {
         API.achievement_unlock("mlt_achievement_sharp_shooter");    
     }
     
@@ -250,7 +250,7 @@ bonuses = [
 #macro MIN_SCORE_MULTIPLICATOR 0
 #macro MIN_BULLET_DAMAGE 1
 #macro MIN_BULLET_ON_SHOT 1
-#macro MIN_PROJECTILE_SPREAD 5
+#macro MIN_PROJECTILE_SPREAD 1
 
 maluses = [
     {

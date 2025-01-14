@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.378437,
+  "duration":0.248163,
   "name":"snd_mlt_enemy_hit",
   "parent":{
     "name":"Sounds",

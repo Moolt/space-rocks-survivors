@@ -8,7 +8,7 @@ if(global.mlt_current_lives > 0) {
 effect_create_above(ef_firework, x, y, 1, c_white);
 
 if(global.mlt_current_score == 0) {
-	API.achievement_unlock("mlt_demo_loser");
+	API.achievement_unlock("mlt_achievement_loser");
 }
 
 instance_destroy(obj_mlt_game);
