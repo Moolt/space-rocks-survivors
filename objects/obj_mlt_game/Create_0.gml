@@ -3,6 +3,7 @@
 
 stage = 1;
 previous_score = 0;
+seconds_until_next_stage = 0;
 
 stage_time_source = time_source_create(time_source_game, 1, time_source_units_seconds, function()  {
     seconds_until_next_stage -= 1;
