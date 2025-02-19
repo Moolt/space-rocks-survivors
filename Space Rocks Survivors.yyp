@@ -30,15 +30,17 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"game.json","CopyToMask":-1,"filePath":"datafiles","name":"game.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"m5x7.ttf","CopyToMask":-1,"filePath":"datafiles","name":"m5x7.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1100.0.713",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Space Rocks Survivors",
   "resources":[
+    {"id":{"name":"fnt_mlt_default","path":"fonts/fnt_mlt_default/fnt_mlt_default.yy",},},
+    {"id":{"name":"fnt_mlt_medium","path":"fonts/fnt_mlt_medium/fnt_mlt_medium.yy",},},
+    {"id":{"name":"fnt_mlt_title","path":"fonts/fnt_mlt_title/fnt_mlt_title.yy",},},
     {"id":{"name":"obj_mlt_bullet_enemy","path":"objects/obj_mlt_bullet_enemy/obj_mlt_bullet_enemy.yy",},},
     {"id":{"name":"obj_mlt_bullet","path":"objects/obj_mlt_bullet/obj_mlt_bullet.yy",},},
     {"id":{"name":"obj_mlt_camera","path":"objects/obj_mlt_camera/obj_mlt_camera.yy",},},
